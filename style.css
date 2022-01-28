@@ -1,0 +1,11 @@
+*{
+     background: yellow;
+    color:black;
+    outline:transparent;
+    outline-style:none; 
+    border-top: none;
+    border-left: none;border-right: none; 
+    border-bottom: black 1px;
+    padding:3px 1px; 
+
+}
