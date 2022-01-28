@@ -20,9 +20,10 @@ const getData = async () => {
     // display the required things
 
       displayResult.innerHTML +=`
+      <div class="small"> 
 
     <img src="${result.amiibo[0].image}" alt="amiibo front image" width=150 height=100/><br><br>
-    
+   
     amiibo name: ${result.amiibo[0].name}<br><br>
     
     amiibo series: ${data[0].amiiboSeries}<br><br>
@@ -34,7 +35,7 @@ const getData = async () => {
     release:
             au:${data[0].release.au}, <br>jp:${data[0].release.jp} <br>
 
-
+<br><br>
       <img src="${result.amiibo[1].image}" alt="amiibo front image"  width=150 height=100 /><br><br>
       
       amiibo name: ${result.amiibo[1].name}<br><br>
@@ -45,7 +46,8 @@ const getData = async () => {
       tail:  ${data[1].tail}<br><br>
 
       release: 
-          au: ${data[1].release.au}, <br>jp:${data[1].release.jp} <br><br>`
+          au: ${data[1].release.au}, <br>jp:${data[1].release.jp} <br><br>
+          </div>`
   } catch (error) {
     console.log(error);
   }
